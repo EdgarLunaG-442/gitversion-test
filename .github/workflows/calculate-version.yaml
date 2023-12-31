@@ -96,7 +96,7 @@ jobs:
       if: inputs.WITH_REPO_TAGGING == true
       uses: actions/github-script@v6.3.3
       with:
-        github-token: ${{ secrets.GUTHUB_TOKEN_2 }}
+        github-token: ${{ secrets.EDGAR_PAT }}
         script: |
           github.rest.git.listMatchingRefs({
             owner: context.repo.owner,
