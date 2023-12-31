@@ -17,4 +17,5 @@ jobs:
     uses: ./.github/workflows/calculate-version.yaml
     with:
       VERSION_USE_CONFIG_FILE: true
+      WITH_REPO_TAGGING: true
         
