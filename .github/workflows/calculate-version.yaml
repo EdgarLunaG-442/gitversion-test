@@ -89,7 +89,6 @@ jobs:
         GITVERSION_OUTPUT_SEMVER: ${{ steps.gitversion.outputs.semVer }}
       run: |
         echo "SemVer: $GITVERSION_SEMVER"
-        echo "Edgar pat is: ${{ secrets.EDGARPAT }}"
         PREFIXED_TAG="${VERSION_GIT_TAG_PREFIX}${GITVERSION_OUTPUT_SEMVER}"
         echo "PREFIXED_TAG: ${PREFIXED_TAG}"
         echo "version=${PREFIXED_TAG}" >> $GITHUB_OUTPUT
@@ -97,7 +96,7 @@ jobs:
       if: inputs.WITH_REPO_TAGGING == true
       uses: actions/github-script@v6.3.3
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+        github-token: ${{ secrets.EDGARPAT }}
         script: |
           github.rest.git.listMatchingRefs({
             owner: context.repo.owner,
