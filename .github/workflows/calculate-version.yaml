@@ -89,7 +89,7 @@ jobs:
         GITVERSION_OUTPUT_SEMVER: ${{ steps.gitversion.outputs.semVer }}
       run: |
         echo "SemVer: $GITVERSION_SEMVER"
-        echo "Edgar pat is: ${{ secrets.GITHUB_TOKEN }}"
+        echo "Edgar pat is: ${{ secrets.EDGARPAT }}"
         PREFIXED_TAG="${VERSION_GIT_TAG_PREFIX}${GITVERSION_OUTPUT_SEMVER}"
         echo "PREFIXED_TAG: ${PREFIXED_TAG}"
         echo "version=${PREFIXED_TAG}" >> $GITHUB_OUTPUT
