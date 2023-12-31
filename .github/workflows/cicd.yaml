@@ -15,6 +15,7 @@ env:
 jobs:        
   calculate-version:
     uses: ./.github/workflows/calculate-version.yaml
+    secrets: inherit
     with:
       VERSION_USE_CONFIG_FILE: true
       WITH_REPO_TAGGING: true
