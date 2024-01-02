@@ -19,7 +19,7 @@ branches:
     source-branches: ['master','release','feature','hotfix']
   release:
     regex: releases?[/-]
-    tag: 'release'
+    tag: 'beta'
     increment: Major
     prevent-increment-of-merged-branch-version: false
     track-merge-target: true
@@ -28,7 +28,7 @@ branches:
     source-branches: ['master']
   hotfix:
     regex: hotfix(es)?[/-]
-    tag: 'hotfix'
+    tag: 'beta'
     increment: Patch
     prevent-increment-of-merged-branch-version: false
     track-merge-target: false
