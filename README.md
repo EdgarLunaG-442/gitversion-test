@@ -1,1 +1,1 @@
-# gitversion-test-hotfix-3.0.0
+# gitversion-test-hotfix-4.0.0
