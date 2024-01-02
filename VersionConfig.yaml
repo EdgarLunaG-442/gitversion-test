@@ -31,8 +31,8 @@ branches:
     tag: 'release'
     increment: Patch
     prevent-increment-of-merged-branch-version: false
-    track-merge-target: false
-    tracks-release-branches: true
+    track-merge-target: true
+    tracks-release-branches: false
     is-release-branch: false
     source-branches: ['release']
 ignore:
