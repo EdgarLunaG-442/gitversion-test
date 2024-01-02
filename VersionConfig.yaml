@@ -11,14 +11,14 @@ branches:
   feature:
     regex: features?[/-]
     tag: 'useBranchName'
-    increment: Inherit
+    increment: Minor
     prevent-increment-of-merged-branch-version: false
     track-merge-target: true
     tracks-release-branches: false
     is-release-branch: false
   release:
     regex: releases?[/-]
-    tag: ''
+    tag: 'beta'
     increment: Major
     prevent-increment-of-merged-branch-version: true
     track-merge-target: false
