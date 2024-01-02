@@ -1,1 +1,1 @@
-# gitversion-test-0.1.0
+# gitversion-test-1.3.0
