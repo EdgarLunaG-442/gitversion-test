@@ -28,7 +28,7 @@ branches:
     source-branches: ['master']
   hotfix:
     regex: hotfix(es)?[/-]
-    tag: ''
+    tag: 'hotfix-{branchName}'
     increment: Patch
     prevent-increment-of-merged-branch-version: true
     track-merge-target: true
