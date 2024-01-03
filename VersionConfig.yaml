@@ -2,7 +2,7 @@ branches:
   master:
     regex: ^dev(elop)?(ment)?$
     tag: ''
-    increment: Minor
+    increment: None
     prevent-increment-of-merged-branch-version: false
     track-merge-target: false
     tracks-release-branches: true
@@ -13,18 +13,18 @@ branches:
     tag: 'useBranchName'
     increment: Minor
     prevent-increment-of-merged-branch-version: false
-    track-merge-target: true
+    track-merge-target: false
     tracks-release-branches: false
     is-release-branch: false
     source-branches: ['master','release','feature','hotfix']
   release:
     regex: releases?[/-]
-    tag: ''
+    tag: 'release'
     increment: Major
-    prevent-increment-of-merged-branch-version: false
+    prevent-increment-of-merged-branch-version: true
     track-merge-target: false
-    tracks-release-branches: true
-    is-release-branch: true
+    tracks-release-branches: false
+    is-release-branch: false
     source-branches: ['master']
   hotfix:
     regex: hotfix(es)?[/-]
