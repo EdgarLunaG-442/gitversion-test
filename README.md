@@ -1,2 +1,2 @@
-# gitversion-test-hotfix-1.0.1
+# gitversion-test-r-1.0.0
 
