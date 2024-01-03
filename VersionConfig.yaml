@@ -22,15 +22,15 @@ branches:
     tag: ''
     increment: Major
     prevent-increment-of-merged-branch-version: false
-    track-merge-target: false
+    track-merge-target: true
     tracks-release-branches: false
-    is-release-branch: false
+    is-release-branch: true
     source-branches: ['master']
   hotfix:
     regex: hotfix(es)?[/-]
     tag: 'hotfix-{BranchName}'
     increment: Patch
-    prevent-increment-of-merged-branch-version: true
+    prevent-increment-of-merged-branch-version: false
     track-merge-target: true
     tracks-release-branches: true
     is-release-branch: false
