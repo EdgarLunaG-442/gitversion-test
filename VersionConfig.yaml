@@ -3,8 +3,7 @@ branches:
     regex: ^dev(elop)?(ment)?$
     tag: ''
     increment: Minor
-    mode: ContinuousDeployment
-    prevent-increment-of-merged-branch-version: true
+    prevent-increment-of-merged-branch-version: false
     track-merge-target: false
     tracks-release-branches: true
     is-release-branch: false
