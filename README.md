@@ -1,2 +1,2 @@
-# gitversion-test-feature-0.3.0
+# gitversion-test-feature-1.0.0
 
