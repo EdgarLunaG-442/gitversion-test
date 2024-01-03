@@ -2,7 +2,7 @@ branches:
   master:
     regex: ^dev(elop)?(ment)?$
     tag: ''
-    increment: None
+    increment: Minor
     prevent-increment-of-merged-branch-version: false
     track-merge-target: false
     tracks-release-branches: true
@@ -28,7 +28,7 @@ branches:
     source-branches: ['master']
   hotfix:
     regex: hotfix(es)?[/-]
-    tag: ''
+    tag: 'hotfix'
     increment: Patch
     prevent-increment-of-merged-branch-version: false
     track-merge-target: false
