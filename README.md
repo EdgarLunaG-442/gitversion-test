@@ -1,1 +1,1 @@
-# gitversion-test-release-4.0.2
+# gitversion-test-release-4.2.0
