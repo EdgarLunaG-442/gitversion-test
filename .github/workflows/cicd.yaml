@@ -6,7 +6,6 @@ on:
     - feature/*
     - develop
     - release/*
-    - hotfix/*
     paths-ignore:
       - 'VERSION'
 env:
