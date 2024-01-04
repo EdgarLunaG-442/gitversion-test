@@ -8,7 +8,6 @@ branches:
     tracks-release-branches: true
     is-release-branch: false
     is-mainline: true
-    source-branches: ['master','feature']
   feature:
     regex: ^features?[/-]
     tag: 'useBranchName'
