@@ -28,11 +28,11 @@ branches:
     source-branches: ['master']
   hotfix:
     regex: hotfix(es)?[/-]
-    tag: 'hotfix-{BranchName}'
+    tag: ''
     increment: Patch
     prevent-increment-of-merged-branch-version: true
     track-merge-target: true
-    tracks-release-branches: false
+    tracks-release-branches: true
     is-release-branch: false
     source-branches: ['release']
 ignore:
