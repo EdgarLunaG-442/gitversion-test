@@ -5,7 +5,7 @@ branches:
     increment: Minor
     prevent-increment-of-merged-branch-version: false
     track-merge-target: false
-    tracks-release-branches: false
+    tracks-release-branches: true
     is-release-branch: false
     is-mainline: true
   feature:
@@ -14,17 +14,17 @@ branches:
     increment: Minor
     prevent-increment-of-merged-branch-version: false
     track-merge-target: false
-    tracks-release-branches: false
+    tracks-release-branches: true
     is-release-branch: false
     source-branches: ['master','release','feature','hotfix']
   release:
     regex: releases?[/-]
-    tag: ''
+    tag: 'hotfix-{BranchName}'
     increment: Major
     prevent-increment-of-merged-branch-version: false
     track-merge-target: false
     tracks-release-branches: false
-    is-release-branch: false
+    is-release-branch: true
     source-branches: ['master']
   hotfix:
     regex: hotfix(es)?[/-]
