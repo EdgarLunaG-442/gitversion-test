@@ -28,6 +28,7 @@ branches:
     source-branches: ['master']
   hotfix:
     regex: hotfix(es)?[/-]
+    mode: ContinuousDeployment
     tag: ''
     increment: Patch
     prevent-increment-of-merged-branch-version: true
