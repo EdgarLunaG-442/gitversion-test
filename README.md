@@ -1,1 +1,1 @@
-# gitversion-test-feature-somefeat
+# gitversion-test-feature-somefeat.
